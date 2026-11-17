@@ -1,6 +1,6 @@
 FROM flyway/flyway:10-alpine
 
-LABEL org.opencontainers.image.source="https://github.com/jesse-bugbash/dockerfile-fixtures" \
+LABEL org.opencontainers.image.source="https://github.com/cperez-lopez/cristest" \
       com.datadoghq.image.source_path="jobs/db-migrations/Dockerfile"
 
 COPY sql /flyway/sql
