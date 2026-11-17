@@ -1,5 +1,9 @@
 FROM python:3.11-slim
 
+# Image source labels, added by Datadog.
+LABEL org.opencontainers.image.source="https://github.com/cperez-lopez/cristest"
+LABEL com.datadoghq.image.source_path="services/recommendations/Dockerfile"
+
 WORKDIR /srv
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
